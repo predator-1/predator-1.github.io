@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>GoIT</title>
         <style>
             html {
                 height: 100%
@@ -33,17 +34,40 @@
                 border-radius: 10px;
                 width: 300px;
             }
+            img {
+                height: 24px;
+                width: 24px;
+            }
+            .social {
+                padding-top: 10px;
+            }
+            .social-link {
+                padding: 5px;
+            }
+            label {
+                display:block;
+            }
+            form {
+                text-align: left;
+            }
         </style>
     </head>
     <body>
         <div class="middle">
-            <h1>COMING SOON</h1>
+            <h1>Сайт в разработке</h1>
             <hr>
+            <p>Открытие через</p>
             <p>35 days</p>
             <form name="subscribe">
-                <input name="email" type="email"/>
-                <button>Submit</button>
+                <label>Подпишись</label>
+                <input placeholder="email" name="email" type="email"/>
+                <button>Подписаться</button>
             </form>
+            <div class="social">
+                <a class="social-link" href="https://www.facebook.com/goITclub"><img src="facebook_icon.png"/></a>
+                <a class="social-link" href="https://www.instagram.com/goitclub/"><img src="instagram_icon.png"/></a>
+                <a class="social-link" href="https://www.youtube.com/c/GoIT"><img src="youtube_icon.png"/></a>
+            </div>
         </div>
     </body>
 </html>
