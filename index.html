@@ -3,30 +3,22 @@
     <head>
         <title>GoIT</title>
         <style>
-            html {
+            html, body {
                 height: 100%
             }
             body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 background-image: url("background.jpg");
-                background-color: #181c27;
-                height: 100%;
-                background-position: center;
                 background-size: cover;
-                position: relative;
-                color: white;
                 font-family: Tahoma, sans-serif;
-            }
-            .middle {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
             }
             button {
                 background-color: #ff6b08;
                 border: none;
-                padding: 3px 10px;
+                padding: 3px;
                 border-radius: 10px;
             }
             input {
@@ -38,39 +30,28 @@
                 height: 24px;
                 width: 24px;
             }
-            .social {
-                padding-top: 10px;
-            }
-            .social-link {
-                padding: 5px;
-            }
-            label {
-                display:block;
-            }
             form {
                 text-align: left;
             }
             .countdown {
-                color: #ff6b08;
+                color: #bb4b00;
             }
         </style>
     </head>
     <body>
-        <div class="middle">
-            <h1>Сайт в разработке</h1>
-            <hr>
-            <h3>Открытие через</h3>
-            <p class="countdown">35 дней 10 часов 5 минут 15 секунд</p>
-            <form name="subscribe">
-                <label>Подпишись</label>
-                <input placeholder="email" name="email" type="email"/>
-                <button>Подписаться</button>
-            </form>
-            <div class="social">
-                <a class="social-link" href="https://www.facebook.com/goITclub"><img src="facebook_icon.png"/></a>
-                <a class="social-link" href="https://www.instagram.com/goitclub/"><img src="instagram_icon.png"/></a>
-                <a class="social-link" href="https://www.youtube.com/c/GoIT"><img src="youtube_icon.png"/></a>
-            </div>
-        </div>
+        <h1>Сайт в разработке</h1>
+        <hr>
+        <h3>Открытие через</h3>
+        <p class="countdown">35 дней 10 часов 5 минут 15 секунд</p>
+        <span>Подпишись. Мы сообщим когда заработаем</span>
+        <form name="subscribe">
+            <input placeholder="email" name="email" type="email"/>
+            <button>Подписаться</button>
+        </form>
+        <p>
+            <a target="_blank" href="https://www.facebook.com/goITclub"><img src="facebook_icon.png"/></a>
+            <a target="_blank" href="https://www.instagram.com/goitclub/"><img src="instagram_icon.png"/></a>
+            <a target="_blank" href="https://www.youtube.com/c/GoIT"><img src="youtube_icon.png"/></a>
+        </p>
     </body>
 </html>
